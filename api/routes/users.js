@@ -3,7 +3,10 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', (req, res) => {
-  res.send('respond with a resource');
+  res.json([{
+    email: 'admin@admin.com',
+    name: 'Admin Admin',
+  }]);
 });
 
 module.exports = router;
