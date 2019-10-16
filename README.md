@@ -36,21 +36,22 @@ To ensure the codebase conforms to a standard, the following JavaScript Style Gu
 
 ## Project Folder Structure
 
-- api - Contains all endpoints and middlewares
-- bin - Contains entry point for the application. 
-- config - To be removed
-- models - Files defining each model or table within the database
-- node_modules - All node modules required for the project
-- public - All front end code (javascript and stylesheets)
-- services - Files interacting with the database or other services 
-- test - Contains test files for each endpoint
-- views - Contains `ejs` files used to render server side template
-  - .env - Contains environmental variables such as database connection user name and passwords
-  - .eslintrc.js 
-  - .gitignore 
-  - app.js
-  - CONTRIBUTING.md
-  - LICENSE
-  - package-lock.json
-  - package.json
-  - README.md
+- `api` - Contains all endpoints and middlewares
+- `bin` - Contains entry point for the application. 
+- `config` - To be removed
+- `models` - Files defining each model or table within the database
+- `node_modules` - All node modules required for the project
+- `public` - All front end code (javascript and stylesheets)
+- `services` - Files interacting with the database or other services 
+- `test` - Contains test files for each endpoint
+- `views` - Contains `ejs` files used to render server side template
+  - `.env` - Contains environmental variables such as database connection user name and passwords
+  - `.eslintrc.js` 
+  - `.gitignore` 
+  - `app.js`
+  - `CONTRIBUTING.md`
+  - `LICENSE`
+  - `package-lock.json`
+  - `package.json`
+  - `README.md`
+
