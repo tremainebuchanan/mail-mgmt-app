@@ -4,6 +4,21 @@
 
 To create a open source tool to track and manage an organizations' snail mail. 
 
+## Git Commit StyleGuide
+
+To ensure commit messages are consistent and easily understandable, please read and 
+follow the below style guide.
+
+[Link to Udacity Git Commit Style Guide]("http://udacity.github.io/git-styleguide/", "Udacity Style Guide")
+
+1. feat: a new feature
+2. fix: a bug fix
+3. docs: changes to documentation
+4. style: formatting, missing semi colons, etc; no code change
+5. refractor: refractor production code
+6. test: adding tests, refractoring test; no production code change
+7. chore: updating build tasks, package manager configs; etc; no production code change
+
 ## Technology Stack
 
 1. Front end JavaScript Framework - currently [AngularJS](,https://angularjs.org/, "AngularJS") (to be changed to [React](https://reactjs.org/,"React"))
