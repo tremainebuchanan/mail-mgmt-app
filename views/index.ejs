@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Snail Mail</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <p>Welcome</p>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mail Correspondence Management</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <link rel="stylesheet" href="stylesheets/main.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/angular-route@1.7.8/angular-route.min.js"></script>
+  <script src="/app/services/shared/common.service.js"></script>
+  <script src="/app/modules/login/login.js"></script>
+  <script src="/app/modules/mail/mailCreate.js"></script>
+  <script src="/app/modules/mail/mailList.js"></script>
+  <script src="/app/modules/mail/mail.service.js"></script>
+  <script src="/app/modules/mail/mail.module.js"></script>
+
+  <script src="/app/app.js"></script>
+</head>
+
+<body ng-app="mail-app">
+  <div ng-view class="container"></div>
+</body>
+
 </html>

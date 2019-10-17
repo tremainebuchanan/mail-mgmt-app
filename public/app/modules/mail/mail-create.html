@@ -1,0 +1,73 @@
+<div class="modal" id="create">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        
+        <section class="modal-card-body">      
+        <form name="createMailForm" 
+              novalidate ng-submit="createMail(createMailForm.$valid, 'create')">
+          <div class="field">
+            <label class="label">Sender's Name</label>
+            <div class="control">
+              <input class="input"
+                     name="sender"
+                     ng-model="mail.sender" 
+                     ng-class="{'is-danger': createMailForm.sender.$invalid && createMailForm.sender.$touched, 
+                     'is-success': createMailForm.sender.$valid}"                     
+                     type="text" 
+                     placeholder="e.g. Aaron Brown" 
+                     required>
+              <p class="help-message" ng-show="createMailForm.sender.$invalid && createMailForm.sender.$touched">The sender's name is required.</p>
+            </div>
+
+          </div>
+          <div class="field" style="margin-top:8px">
+            <label class="label">Sender's Organization</label>
+            <div class="control">
+              <input class="input" 
+                    type="text" 
+                    placeholder="e.g. Aaron Brown"
+                    ng-model="mail.org">
+              <p class="help-message is-pulled-right">Optional</p>
+            </div>
+          </div>
+          
+          
+          <div class="field">
+            <label class="label">Recipient's Name</label>
+            <div class="control">
+              <input class="input"
+                     name="recipient"
+                     ng-model="mail.recipient"
+                     ng-class="{'is-success': createMailForm.recipient.$valid,
+                    'is-danger': createMailForm.recipient.$invalid && createMailForm.recipient.$touched}" 
+                     type="text" 
+                     required
+                     placeholder="e.g. Aaron Brown">
+              <p class="help-message" ng-show="createMailForm.recipient.$invalid && createMailForm.recipient.$touched">The recipient's name is required.</p>
+            </div>
+          </div>
+                
+          
+          <div class="field">
+            <label class="label">Subject of Correspondence</label>
+            <div class="control">
+              <textarea class="textarea" ng-model="mail.subject"></textarea>
+              <p class="help-message is-pulled-right">Optional</p>
+            </div>
+          </div>
+
+          <div class="field is-grouped">
+            <div class="control">
+              <a class="button is-light" href ng-click="toggleModal('create')">Cancel</a>
+            </div>
+
+            <div class="control">
+              <button class="button is-link" type="submit">Submit</button>
+            </div>
+            
+          </div>
+        </form>  
+        
+        </section>
+    </div>
+</div>
