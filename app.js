@@ -6,6 +6,8 @@ const logger = require('morgan');
 
 const indexRouter = require('./api/routes/index');
 const usersRouter = require('./api/routes/users');
+const mailRoute = require('./api/routes/mail');
+const db = require('./database/db');
 
 const app = express();
 
@@ -18,7 +20,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/users', usersRouter);
+app.use('/api', usersRouter);
+app.use('/api', mailRoute);
 app.use('*', indexRouter);
 
 app.use((req, res, next) => {
