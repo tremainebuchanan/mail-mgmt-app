@@ -1,4 +1,4 @@
-FROM nodejs
+FROM node
 LABEL Name='Snail Mail Management Software'
 
 RUN npm clean install
