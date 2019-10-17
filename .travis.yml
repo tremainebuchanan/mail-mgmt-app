@@ -12,6 +12,12 @@ script:
 - npm test
 - npm pack
 
+after_script:
+- docker login -u $docker_user -p $docker_password
+- docker build -t cakhanif/mail-mgmt-app:v1 .
+- docker tag cakhanif/mail-mgmt-app:v1 cakhanif/mail-mgmt-app:latest
+- docker push cakhanif/mail-mgmt-app:v1 cakhanif/mail-mgmt-app:latest
+
 after_success:
 # Submit coverage report to https://codecov.io
 - bash <(curl -s https://codecov.io/bash)
