@@ -1,3 +1,11 @@
+/**
+ * @fileOverview Contains the index router
+ *
+ * @author tremainebuchanan
+ *
+ * @requires NPM:express
+*/
+
 const express = require('express');
 
 const router = express.Router();

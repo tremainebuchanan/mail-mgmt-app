@@ -4,11 +4,13 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www",
-    "test": "mocha --timeout 10000"
+    "test": "mocha --timeout 10000",
+    "generate:docs": "node_modules/.bin/jsdoc -c jsdoc.json"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
+    "docdash": "^1.1.1",
     "ejs": "~2.5.7",
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
@@ -20,6 +22,7 @@
     "eslint": "^6.5.1",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
+    "jsdoc": "^3.6.2",
     "mocha": "^6.2.1",
     "nodemon": "^1.19.3"
   }
