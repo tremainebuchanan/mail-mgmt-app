@@ -37,19 +37,25 @@ To ensure the codebase conforms to a standard, the following JavaScript Style Gu
 ## Project Folder Structure
 
 - `api` - Contains all endpoints and middlewares
+  - `middlewares`
+  - `routes`
 - `bin` - Contains entry point for the application. 
 - `config` - To be removed
-- `models` - Files defining each model or table within the database
+- `database` - Contains `knex` library configuration. 
+    - `db.js` 
 - `node_modules` - All node modules required for the project
 - `public` - All front end code (javascript and stylesheets)
 - `services` - Files interacting with the database or other services 
 - `test` - Contains test files for each endpoint
 - `views` - Contains `ejs` files used to render server side template
-  - `.env` - Contains environmental variables such as database connection user name and passwords
+  - `.env` - Contains environmental variables such as database connection user name and passwords. 
+  - `.env_copy` - Contains the environment variables that should be set for the project in the `env` file. 
   - `.eslintrc.js` 
   - `.gitignore` 
+  - `.travis.yml`
   - `app.js`
   - `CONTRIBUTING.md`
+  - `Dockerfile`
   - `LICENSE`
   - `package-lock.json`
   - `package.json`
