@@ -1,0 +1,27 @@
+language: node_js
+
+node_js:
+  - 10.16.2
+
+before_script:
+  - rm package-lock.json
+  - npm install
+
+script:
+- npm ci
+- npm test
+- npm pack
+
+after_success:
+# Submit coverage report to https://codecov.io
+- bash <(curl -s https://codecov.io/bash)
+
+# Monitor only these branches
+branches:
+  except:
+    - null
+
+# You can delete the cache using travis-ci web interface
+cache:
+  directories:
+  - $HOME/node_modules
