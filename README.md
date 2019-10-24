@@ -34,6 +34,17 @@ follow the below style guide.
 To ensure the codebase conforms to a standard, the following JavaScript Style Guide will be adopted:
 1. [Airbnb](https://github.com/airbnb/javascript, "Airbnb JavaScript Style Guide")
 
+## instructions for how to set up database and run migrations
+
+1. To setup database open the knexfile.js file.
+2. in this file you will see section connection: { host: '127.0.0.1', user: process.env.DB_USERNAME, password: process.env.DB_PASSWORD, database: process.env.DB_NAME, }.
+3. change the host information after host: to your database host name .
+4. change the user information after user: to your database user name.
+5. change the password information after password: to your database password.
+6. change the database information after database: to your database name.
+7. if correct, you will have successfully set up to your own database.
+8 . To Run migration just  execute migrate command in command line 
+
 ## Project Folder Structure
 
 - `api` - Contains all endpoints and middlewares
