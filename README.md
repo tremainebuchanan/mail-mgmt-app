@@ -55,3 +55,8 @@ To ensure the codebase conforms to a standard, the following JavaScript Style Gu
   - `package.json`
   - `README.md`
 
+javascript documentation tools how to install and use are given below
+
+Download and install Node.js
+Run npm -g install yuidocjs.
+Run yuidoc . at the top of your JS source tree.
