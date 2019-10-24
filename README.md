@@ -21,7 +21,7 @@ follow the below style guide.
 
 ## Technology Stack
 
-1. Front end JavaScript Framework - currently [AngularJS](https://angularjs.org "AngularJS") (to be changed to [React](https://reactjs.org/ "React"))
+1. Front end JavaScript Framework - currently [AngularJS](https://angularjs.org/ "AngularJS") (to be changed to [React](https://reactjs.org/ "React"))
 2. Front End CSS Framework - [Bulma](https://bulma.io/ "Bulma")
 3. Back end Framework - [NodeJS](https://nodejs.org/en/ "NodeJS"), [ExpressJS](https://expressjs.com/ "Express")
 4. Database - [MYSQL](https://www.mysql.com/ "MYSQL") 
