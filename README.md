@@ -55,3 +55,5 @@ To ensure the codebase conforms to a standard, the following JavaScript Style Gu
   - `package.json`
   - `README.md`
 
+
+How to set up Database & run migration - https://docs.oracle.com/javacomponents/advanced-management-console-2/install-guide/mysql-database-installation-and-configuration-advanced-management-console.htm#JSAMI116 & https://www.mysql.com/products/workbench/migrate/
